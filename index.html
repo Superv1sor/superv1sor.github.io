@@ -10,48 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DevCard: Heiko Frosch" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/android-icon-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="favicon.ico" />
 
     <!-- Google Fonts -->
     <link
@@ -72,9 +31,7 @@
   <body>
     <header class="header text-center">
       <div class="force-overflow">
-        <h1 class="blog-name pt-lg-4 mb-0">
-          <a href="index.php">Heiko Frosch</a>
-        </h1>
+        <h1 class="blog-name pt-lg-4 mb-0"><a href="/">Heiko Frosch</a></h1>
         <i class="fas fa-map-marker-alt"></i> Munich
 
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -92,16 +49,16 @@
 
           <div id="navigation" class="collapse navbar-collapse flex-column">
             <div class="profile-section pt-3 pt-lg-0">
-              <img
-                class="profile-image mb-3 rounded-circle mx-auto border"
-                style="border: solid 10px #303b49 !important"
-                src="assets/images/profile-ph.jpg"
-                alt="image"
-              />
+              <a href="/"
+                ><img
+                  class="profile-image mb-3 rounded-circle mx-auto"
+                  src="assets/images/profile-ph.jpg"
+                  alt="image"
+              /></a>
 
               <div class="bio mb-3">
                 Hi, my name is Heiko and I'm a senior web developer from Munich.
-                Welcome to my personal website!
+                Welcome to my personal DevCard!
               </div>
               <!--//bio-->
               <ul class="social-list list-inline py-2 mx-auto">
@@ -141,7 +98,7 @@
 
             <ul class="navbar-nav flex-column text-left">
               <li class="nav-item active">
-                <a class="nav-link" href="index.php"
+                <a class="nav-link" href="/"
                   ><i class="fas fa-user fa-fw mr-2"></i>About Me<span
                     class="sr-only"
                     >(current)</span
@@ -149,7 +106,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.php"
+                <a class="nav-link" href="portfolio.html"
                   ><i class="fas fa-laptop-code fa-fw mr-2"></i>Portfolio</a
                 >
               </li>
@@ -170,7 +127,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.php"
+                <a class="nav-link" href="contact.html"
                   ><i class="fas fa-envelope-open-text fa-fw mr-2"></i
                   >Contact</a
                 >
@@ -199,7 +156,7 @@
             </ul>
 
             <div class="my-2">
-              <a class="btn btn-primary" href="contact.php" target="_blank"
+              <a class="btn btn-primary" href="contact.html" target="_blank"
                 ><i class="fas fa-paper-plane mr-2"></i>Hire Me</a
               >
             </div>
@@ -225,8 +182,8 @@
         <div class="container">
           <div class="profile-teaser media flex-column flex-lg-row">
             <div class="media-body">
-              <h2 class="name font-weight-bold mb-1">Simon Doe</h2>
-              <div class="tagline mb-3">Senior Software Engineer</div>
+              <h2 class="name font-weight-bold mb-1">Heiko Frosch</h2>
+              <div class="tagline mb-3">Senior Web Developer</div>
               <div class="bio mb-4">
                 I'm a software engineer specialised in frontend and backend
                 development for complex scalable web apps. I write about
@@ -238,7 +195,7 @@
               </div>
               <!--//bio-->
               <div class="mb-4">
-                <a class="btn btn-primary mr-2 mb-3" href="portfolio.php"
+                <a class="btn btn-primary mr-2 mb-3" href="portfolio.html"
                   ><i class="fas fa-arrow-alt-circle-right mr-2"></i
                   ><span class="d-none d-md-inline">View</span> Portfolio</a
                 >
@@ -267,7 +224,7 @@
             all over the world. Below is a quick overview of my main technical
             skill sets and technologies I use. Want to find out more about my
             experience? Check out my <a href="resume.html">online resume</a> and
-            <a href="portfolio.php">project portfolio</a>.
+            <a href="portfolio.html">project portfolio</a>.
           </div>
           <div class="row">
             <div class="item col-6 col-lg-3">
@@ -447,9 +404,7 @@
         <!--//container-->
       </section>
 
-      <div class="container">
-        <hr />
-      </div>
+      <div class="container"><hr /></div>
 
       <section class="testimonials-section p-3 p-lg-5">
         <div class="container">
@@ -461,7 +416,7 @@
                 <div class="item-inner">
                   <div class="quote-holder">
                     <blockquote class="quote-content">
-                      Simon is a brilliant software engineer! Lorem ipsum dolor
+                      Heiko is a brilliant software engineer! Lorem ipsum dolor
                       sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque
                       penatibus et magnis.
@@ -490,7 +445,7 @@
                 <div class="item-inner">
                   <div class="quote-holder">
                     <blockquote class="quote-content">
-                      Simon is a brilliant software engineer! Lorem ipsum dolor
+                      Heiko is a brilliant software engineer! Lorem ipsum dolor
                       sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque
                       penatibus et magnis.
@@ -519,7 +474,7 @@
                 <div class="item-inner">
                   <div class="quote-holder">
                     <blockquote class="quote-content">
-                      Simon is a brilliant software engineer! Lorem ipsum dolor
+                      Heiko is a brilliant software engineer! Lorem ipsum dolor
                       sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque
                       penatibus et magnis.
@@ -548,7 +503,7 @@
                 <div class="item-inner">
                   <div class="quote-holder">
                     <blockquote class="quote-content">
-                      Simon is a brilliant software engineer! Lorem ipsum dolor
+                      Heiko is a brilliant software engineer! Lorem ipsum dolor
                       sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque
                       penatibus et magnis.
@@ -577,7 +532,7 @@
                 <div class="item-inner">
                   <div class="quote-holder">
                     <blockquote class="quote-content">
-                      Simon is a brilliant software engineer! Lorem ipsum dolor
+                      Heiko is a brilliant software engineer! Lorem ipsum dolor
                       sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque
                       penatibus et magnis.
@@ -606,7 +561,7 @@
                 <div class="item-inner">
                   <div class="quote-holder">
                     <blockquote class="quote-content">
-                      Simon is a brilliant software engineer! Lorem ipsum dolor
+                      Heiko is a brilliant software engineer! Lorem ipsum dolor
                       sit amet, consectetuer adipiscing elit. Aenean commodo
                       ligula eget dolor. Aenean massa. Cum sociis natoque
                       penatibus et magnis.
@@ -639,9 +594,7 @@
       </section>
       <!--//testimonials-section-->
 
-      <div class="container">
-        <hr />
-      </div>
+      <div class="container"><hr /></div>
 
       <section class="featured-section p-3 p-lg-5">
         <div class="container">
@@ -814,7 +767,7 @@
           </div>
           <!--//row-->
           <div class="text-center py-3">
-            <a href="portfolio.php" class="btn btn-primary"
+            <a href="portfolio.html" class="btn btn-primary"
               ><i class="fas fa-arrow-alt-circle-right mr-2"></i>View
               Portfolio</a
             >
@@ -824,9 +777,7 @@
       </section>
       <!--//featured-section-->
 
-      <div class="container">
-        <hr />
-      </div>
+      <div class="container"><hr /></div>
 
       <section class="latest-blog-section p-3 p-lg-5">
         <div class="container">
@@ -939,10 +890,8 @@
 
       <footer class="footer text-center py-4">
         <small class="copyright"
-          >Template Copyright &copy;
-          <a href="https://themes.3rdwavemedia.com/" target="_blank"
-            >3rd Wave Media</a
-          ></small
+          >Made with <i class="far fa-heart" style="color: red"></i> in Munich –
+          2021</small
         >
       </footer>
     </div>
