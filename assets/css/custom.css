@@ -2,6 +2,6 @@
   border: 8px solid #398562 !important;
 }
 
-.border-dark {
+body.dark-mode .border {
   border: 8px solid #303b49 !important;
 }
