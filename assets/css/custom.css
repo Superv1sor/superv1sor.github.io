@@ -5,3 +5,9 @@
 body.dark-mode .border {
   border: 8px solid #303b49 !important;
 }
+
+.muc {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
