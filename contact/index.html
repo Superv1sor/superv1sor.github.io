@@ -96,7 +96,7 @@
 			<h2 class="heading">Contact</h2>
 			<div class="intro">
 				<p>Interested in hiring me for your project or just want to say hi? You can fill in the contact form below or send me an email to <a href="mailto:hf@leet.de">hf@leet.de</a>.</p>
-				<p>Want to get connected? Follow me on the social channels below.</p>
+				<p>Of course, I am also happy to be contacted via <a href="https://www.linkedin.com/in/heiko-frosch/">LinkedIn</a>.</p>
 				<ul class="list-inline mb-0">
 					<li class="list-inline-item mb-3"><a href="https://www.linkedin.com/in/heiko-frosch/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
 					<li class="list-inline-item mb-3"><a href="https://github.com/Superv1sor"><i class="fab fa-github-alt fa-fw"></i></a></li>
@@ -111,20 +111,21 @@
 	</section>
 	<section class="contact-section px-3 py-5 p-md-5">
 		<div class="container">
-			<form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="">
+			<form id="contact-form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post" class="contact-form col-lg-8 mx-lg-auto">
+				<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 				<h3 class="text-center mb-3">Get In Touch</h3>
 				<div class="form-row">
 					<div class="form-group col-md-6">
 						<label class="sr-only" for="cname">Name</label>
-						<input type="text" class="form-control" id="cname" name="name" placeholder="Name" minlength="2" required="" aria-required="true">
+						<input type="text" name="name" id="full-name" placeholder="Name" minlength="2" required="" aria-required="true" class="form-control">
 					</div>
 					<div class="form-group col-md-6">
 						<label class="sr-only" for="cemail">Email</label>
-						<input type="email" class="form-control" id="cemail" name="email" placeholder="Email" required="" aria-required="true">
+						<input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" aria-required="true" class="form-control">
 					</div>
 					<div class="form-group col-12">
 						<label class="sr-only" for="cmessage">Your message</label>
-						<textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="10" required="" aria-required="true"></textarea>
+						<textarea rows="10" name="message" id="message" placeholder="Enter your message" required="" aria-required="true" class="form-control"></textarea>
 					</div>
 					<div class="form-group col-12">
 						<button type="submit" class="btn btn-block btn-primary py-2"><i class="fas fa-arrow-alt-circle-right mr-2"></i> Send Now</button>
