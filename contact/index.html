@@ -34,6 +34,9 @@
 
   <!-- FontAwesome JS -->
   <script defer src="/assets/fontawesome/js/all.js"></script>
+  
+  <!-- CustomFont JS -->
+  <script defer src="/assets/js/custom-icon-pack.js"></script>
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="/assets/plugins/tiny-slider/tiny-slider.css" />
@@ -114,7 +117,7 @@
 			<form id="my-form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqwbwjv" method="post" class="contact-form col-lg-8 mx-lg-auto">
 				<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 				<h3 class="text-center mb-3">Get In Touch</h3>
-				<div class="form-row">
+				<div class="form-row" id="my-form-form">
 					<div class="form-group col-md-6">
 						<label class="sr-only" for="cname">Name</label>
 						<input type="text" name="name" id="full-name" placeholder="Name" minlength="2" required="" aria-required="true" class="form-control">
@@ -130,10 +133,25 @@
 					<div class="form-group col-12">
 						<button id="my-form-button" type="submit" class="btn btn-block btn-primary py-2"><i class="fas fa-arrow-alt-circle-right mr-2"></i> Send Now</button>
 					</div>
-					<p id="my-form-status"></p>
 				</div>
-			<!--//form-row-->
+
 			</form>
+			<!--//form-row-->
+			<div class="form-row-thx" id="my-form-suxx">
+				<div class="cntnr">
+					<div class="anmtn">
+						<div class="i-mail">
+							<div class="mail-anim"></div>
+						</div>
+						<div class="lne"></div>
+						<div class="i-success">
+							<div class="success-anim"></div>
+						</div>
+					</div>
+					<div class="mssg"><b>Thank you</b>, your message has been sent!</div>
+				</div>
+			</div>
+			<!--//form-row-thx-->
 		</div>
 		<!--//container-->
 	</section>
@@ -151,9 +169,12 @@
   
   <script>
     var form = document.getElementById("my-form");
+    var suxx = document.getElementById("my-form-suxx");
+    suxx.style.display = "none";
     
     async function handleSubmit(event) {
       event.preventDefault();
+      var hidefom = document.getElementById("my-form-form");
       var status = document.getElementById("my-form-status");
       var data = new FormData(event.target);
       fetch(event.target.action, {
@@ -164,7 +185,9 @@
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+        	hidefom.style.display = "none";
+          // status.innerHTML = "Thanks for your submission!";
+          suxx.style.display = "";
           form.reset()
         } else {
           response.json().then(data => {
@@ -181,6 +204,7 @@
     }
     form.addEventListener("submit", handleSubmit)
   </script>
+  
   <script src="/assets/plugins/tiny-slider/min/tiny-slider.js"></script>
   <script src="/assets/js/testimonials.js"></script>
 
