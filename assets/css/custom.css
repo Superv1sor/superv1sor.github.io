@@ -181,6 +181,10 @@ body.dark-mode .border {
     text-decoration: none;
 }
 
+body.dark-mode .social-list a {
+	color: #fff;
+}
+
 .icon-mysql_icon .path1:before {
   content: "\e900";
   color: rgb(0, 117, 143);
