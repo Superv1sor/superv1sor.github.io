@@ -10,6 +10,9 @@ $(document).ready(function() {
         $('.isotope').isotope({
             itemSelector: '.isotope-item',
             layoutMode: 'fitRows',
+            fitRows: {
+    gutter: 20
+  }
         });
     });
     
