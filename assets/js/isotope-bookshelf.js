@@ -9,7 +9,10 @@ $(document).ready(function() {
     $container.imagesLoaded(function () {
         $('.isotope').isotope({
             itemSelector: '.isotope-item',
-            layoutMode: 'fitRows'
+            layoutMode: 'fitRows',
+            fitRows: {
+            	gutter: 20
+            }
         });
     });
     
