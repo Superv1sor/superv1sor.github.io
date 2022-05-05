@@ -255,14 +255,14 @@ body.dark-mode .social-list a {
 
 /*Books*/
 .bookshelf{font-size:0.875em;display:grid;grid-gap:1.5em;grid-template-columns:1fr;}
-.bookshelf article{display:grid;grid-template-columns:80px 1fr;grid-gap:1em !important;background-color: none; width: 160px;border-bottom:solid transparent 20px;}
-.bookshelf article img{max-width:100% !important;display:block;object-fit:contain !important;object-position: bottom;}
-.bookshelf section {background-color: transparent;}
-.bookshelf section h3{margin:5px 0;font-size: 1rem;line-height: 1;}
-.bookshelf section p{margin:0; line-height: 1;background-color: transparent;}
+.bookshelf .book{display:grid;grid-template-columns:80px 1fr;grid-gap:1em !important;background-color: none; width: 160px;border-bottom:solid transparent 20px;}
+.bookshelf .book img{max-width:100% !important;display:block;object-fit:contain !important;object-position: bottom;}
+.bookshelf .book {background-color: transparent;}
+.bookshelf .book h3{margin:5px 0;font-size: 1rem;line-height: 1;}
+.bookshelf .book p{margin:0; line-height: 1;background-color: transparent;}
 
 @media (min-width: 42em){
 .bookshelf{flex-direction:row;grid-template-columns:repeat(auto-fill, minmax(11.5em, 1fr));}
-.bookshelf article{display:block;}
-.bookshelf article img{height:270px;margin-bottom:8px;}
+.bookshelf .book{display:block;}
+.bookshelf .book img{height:270px;margin-bottom:8px;}
 }
